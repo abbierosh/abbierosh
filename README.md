@@ -43,7 +43,7 @@ From there, SQL is one tool in a bigger workflow:
 
 Sometimes the next step is a fix. Sometimes it is a product change. Sometimes it is better monitoring, clearer tooling, or a process update so the issue is easier to spot earlier.
 
-## Why This Is Product Ops Work
+## Why i enjoy it
 
 This kind of work sits between product, support, engineering, and data.
 
@@ -51,20 +51,20 @@ You need enough product understanding to know what should happen, enough system 
 
 That is the lens I wanted this repo to reflect.
 
-## How This Work Translates To Product Ops
+## How This Translates To Product Ops
 
 - Debugging becomes product insight when repeated issue patterns show where the product is confusing, fragile, or missing visibility.
 - Investigation becomes system improvement when one-off issues turn into better alerts, better tooling, or better workflows.
 - Data checks become decision-making when they help teams distinguish between a real problem, a timing issue, and a reporting artefact.
 
-## Notes On The Examples
+## Notes
 
 - Everything here is generic and anonymised
 - The patterns are based on real operational work, but sensitive detail has been removed
 - The comments explain investigation intent and decision-making, not just SQL syntax
 - The goal is to show how I think through platform issues, not to build a tutorial repo
 
-## Suggested Starting Points
+## Starting Points
 
 1. Read [`framework/investigation-framework.md`](framework/investigation-framework.md)
 2. Look at [`playbooks/interaction-history-check.sql`](playbooks/interaction-history-check.sql)
