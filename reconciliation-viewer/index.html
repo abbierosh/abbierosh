@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reporting Reconciliation Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="intro">
+        <div>
+          <p class="eyebrow">Reporting validation</p>
+          <h1>Reconciliation Viewer</h1>
+          <p class="summary">A small view for checking missing, delayed, duplicated, or mismatched reporting records.</p>
+        </div>
+        <label class="upload">
+          <span>Load CSV</span>
+          <input id="csv-upload" type="file" accept=".csv,text/csv">
+        </label>
+      </section>
+
+      <section class="cards" id="summary-cards" aria-label="Reconciliation summary"></section>
+
+      <section class="toolbar">
+        <div class="filters" id="filters" aria-label="Status filters"></div>
+        <p class="count" id="record-count"></p>
+      </section>
+
+      <section class="table-wrap" aria-label="Reconciliation records">
+        <table>
+          <thead>
+            <tr>
+              <th>Business Key</th>
+              <th>Status</th>
+              <th>Source</th>
+              <th>Report</th>
+              <th>Amount</th>
+              <th>Rows</th>
+              <th>Loaded</th>
+            </tr>
+          </thead>
+          <tbody id="records"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

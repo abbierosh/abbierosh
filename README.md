@@ -29,6 +29,7 @@ This repo shows how I investigate platform issues, validate data, and improve re
 - `integration-analysis/`: payload and integration checks
 - `tools/`: small Python checks that run locally
 - `sample-data/`: fake CSV data for the Python example
+- `reconciliation-viewer/`: simple HTML/CSS/JS view for reconciliation results
 
 ## Relevant Skills
 
@@ -46,7 +47,7 @@ SQL, Python, Business Analysis, Operations Analysis, Reporting Validation, Data 
 2. [`data-quality-checks/`](data-quality-checks/)
 3. [`reporting-validation/reconciliation-check.sql`](reporting-validation/reconciliation-check.sql)
 4. [`tools/reconcile_reporting.py`](tools/reconcile_reporting.py)
-5. [`case-studies/reporting-gap-vs-real-incident.md`](case-studies/reporting-gap-vs-real-incident.md)
+5. [`reconciliation-viewer/index.html`](reconciliation-viewer/index.html)
 
 Run the Python example:
 
@@ -56,3 +57,11 @@ python3 tools/reconcile_reporting.py \
   --reporting sample-data/reporting_records.csv \
   --output sample-data/reconciliation_output.csv
 ```
+
+Run the viewer:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000/reconciliation-viewer/`.
