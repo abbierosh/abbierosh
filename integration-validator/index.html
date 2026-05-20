@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API Payload Validator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="intro">
+        <div>
+          <p class="eyebrow">Integration checks</p>
+          <h1>API Payload Validator</h1>
+          <p class="summary">A small validator for spotting payload issues before they affect workflows or reporting.</p>
+        </div>
+        <label class="upload">
+          <span>Load JSON</span>
+          <input id="json-upload" type="file" accept=".json,application/json">
+        </label>
+      </section>
+
+      <section class="cards" id="summary-cards" aria-label="Validation summary"></section>
+
+      <section class="toolbar">
+        <div class="filters" id="filters" aria-label="Severity filters"></div>
+        <p class="count" id="record-count"></p>
+      </section>
+
+      <section class="table-wrap" aria-label="Payload validation results">
+        <table>
+          <thead>
+            <tr>
+              <th>Event ID</th>
+              <th>Severity</th>
+              <th>Event Type</th>
+              <th>Subscriber</th>
+              <th>Issue</th>
+              <th>Operational Impact</th>
+            </tr>
+          </thead>
+          <tbody id="records"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

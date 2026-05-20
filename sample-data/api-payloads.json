@@ -1,0 +1,50 @@
+[
+  {
+    "event_id": "evt-1001",
+    "subscriber_id": "sub-201",
+    "event_type": "email_sent",
+    "occurred_at": "2026-04-01T09:10:00Z",
+    "source_system": "campaign_api",
+    "campaign_id": "cmp-501"
+  },
+  {
+    "event_id": "evt-1002",
+    "subscriber_id": "",
+    "event_type": "email_opened",
+    "occurred_at": "2026-04-01T09:45:00Z",
+    "source_system": "tracking_api",
+    "campaign_id": "cmp-501"
+  },
+  {
+    "event_id": "evt-1003",
+    "subscriber_id": "sub-203",
+    "event_type": "email_clicked",
+    "occurred_at": "2026/04/01 10:00",
+    "source_system": "tracking_api",
+    "campaign_id": "cmp-501"
+  },
+  {
+    "event_id": "evt-1004",
+    "subscriber_id": "sub-204",
+    "event_type": "email_forwarded",
+    "occurred_at": "2026-04-01T10:15:00Z",
+    "source_system": "tracking_api",
+    "campaign_id": "cmp-501"
+  },
+  {
+    "event_id": "evt-1005",
+    "subscriber_id": "sub-205",
+    "event_type": "email_bounced",
+    "occurred_at": "2026-04-01T10:30:00Z",
+    "source_system": null,
+    "campaign_id": "cmp-501"
+  },
+  {
+    "event_id": "evt-1001",
+    "subscriber_id": "sub-201",
+    "event_type": "email_sent",
+    "occurred_at": "2026-04-01T09:10:00Z",
+    "source_system": "campaign_api",
+    "campaign_id": "cmp-501"
+  }
+]
